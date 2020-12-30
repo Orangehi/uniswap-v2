@@ -2,7 +2,7 @@ package main
 
 import (
 	"bufio"
-	"github.com/uniswap-v2/answer-1229/chain/"
+	"github.com/uniswap-v2/answer-1229/chain"
 	"fmt"
 	"os"
 	"strconv"
