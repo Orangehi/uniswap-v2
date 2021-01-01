@@ -40,7 +40,7 @@ func SendRewardTransaction(from string, addr string, reward int64, input *hexuti
 		To:   &to,
 		Data: input,
 	}
-	rewardWei := new(big.Int).Mul(big.NewInt(1e+15), new(big.Int).SetInt64(reward))
+	rewardWei := new(big.Int).Mul(big.NewInt(1e+18), new(big.Int).SetInt64(reward))
 	tx.Value = (*hexutil.Big)(rewardWei)
 	var txHash common.Hash
 	con := context.Background()
